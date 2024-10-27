@@ -1,0 +1,69 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Author {
+  """Example field (placeholder)"""
+  firstName: Int!
+
+  """Identificador (placeholder)"""
+  id: Int!
+
+  """Example field (placeholder)"""
+  isActive: Int!
+
+  """Example field (placeholder)"""
+  lastName: Int!
+}
+
+input CreateAuthorInput {
+  firstName: String!
+  isActive: Boolean!
+  lastName: String!
+}
+
+input CreatePostInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Mutation {
+  createAuthor(createAuthorInput: CreateAuthorInput!): Author!
+  createPost(createPostInput: CreatePostInput!): Post!
+  removeAuthor(id: Int!): Author!
+  removePost(id: Int!): Post!
+  updateAuthor(updateAuthorInput: UpdateAuthorInput!): Author!
+  updatePost(updatePostInput: UpdatePostInput!): Post!
+}
+
+type Post {
+  """Identificador (placeholder)"""
+  id: Int!
+
+  """Tema (placeholder)"""
+  theme: Int!
+
+  """Tittle (placeholder)"""
+  tittle: Int!
+}
+
+type Query {
+  author(id: Int!): Author!
+  authors: [Author!]!
+  helloWorld: String!
+  post(id: Int!): Post!
+  posts: [Post!]!
+}
+
+input UpdateAuthorInput {
+  firstName: String
+  id: Int!
+  isActive: Boolean
+  lastName: String
+}
+
+input UpdatePostInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
